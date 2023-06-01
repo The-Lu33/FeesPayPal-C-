@@ -1,0 +1,15 @@
+C:\Users\The Lu\Desktop\c#\pro1\bin\Debug\net7.0\pro1.exe
+C:\Users\The Lu\Desktop\c#\pro1\bin\Debug\net7.0\pro1.deps.json
+C:\Users\The Lu\Desktop\c#\pro1\bin\Debug\net7.0\pro1.runtimeconfig.json
+C:\Users\The Lu\Desktop\c#\pro1\bin\Debug\net7.0\pro1.dll
+C:\Users\The Lu\Desktop\c#\pro1\bin\Debug\net7.0\pro1.pdb
+C:\Users\The Lu\Desktop\c#\pro1\obj\Debug\net7.0\pro1.csproj.AssemblyReference.cache
+C:\Users\The Lu\Desktop\c#\pro1\obj\Debug\net7.0\pro1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\The Lu\Desktop\c#\pro1\obj\Debug\net7.0\pro1.AssemblyInfoInputs.cache
+C:\Users\The Lu\Desktop\c#\pro1\obj\Debug\net7.0\pro1.AssemblyInfo.cs
+C:\Users\The Lu\Desktop\c#\pro1\obj\Debug\net7.0\pro1.csproj.CoreCompileInputs.cache
+C:\Users\The Lu\Desktop\c#\pro1\obj\Debug\net7.0\pro1.dll
+C:\Users\The Lu\Desktop\c#\pro1\obj\Debug\net7.0\refint\pro1.dll
+C:\Users\The Lu\Desktop\c#\pro1\obj\Debug\net7.0\pro1.pdb
+C:\Users\The Lu\Desktop\c#\pro1\obj\Debug\net7.0\pro1.genruntimeconfig.cache
+C:\Users\The Lu\Desktop\c#\pro1\obj\Debug\net7.0\ref\pro1.dll
