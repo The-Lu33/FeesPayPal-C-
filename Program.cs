@@ -1,9 +1,11 @@
 ﻿using System;
-
+using Calcular.Models;
 namespace Calculadore
 {
-    class comissionsOfPaypal
+    class program
     {
+
+
         static void Main(string[] args)
         {
             float porcentajeComision = 5.4f;
@@ -11,11 +13,10 @@ namespace Calculadore
             float monto = 0f;
             string selectMethod = "";
             string repeat = "y";
-
             Console.WriteLine("Bienvenido a su calculadora de Paypal");
             Console.WriteLine($"Porcentaje {porcentajeComision}% + comision fija {comisionFija}$");
 
-            comissionsOfPaypal calculadora = new comissionsOfPaypal(); // Crear una instancia de la clase
+            CommissionOfPaypal calculadora = new CommissionOfPaypal(); // Crear una instancia de la clase
 
             while (repeat.ToLower() == "y")
             {
@@ -25,14 +26,14 @@ namespace Calculadore
                 if (selectMethod.ToLower() == "r")
                 {
                     Console.WriteLine("Por favor indique el monto a calcular");
-                    monto = float.Parse(Console.ReadLine());
+                    monto = float.Parse(Console.ReadLine() ?? "0.0f");
                     float envia = calculadora.Enviar(porcentajeComision, comisionFija, monto);
                     Console.WriteLine($"Si envia ${monto}, recibira: {envia}");
                 }
                 else if (selectMethod.ToLower() == "e")
                 {
                     Console.WriteLine("Por favor indique el monto a calcular");
-                    monto = float.Parse(Console.ReadLine());
+                    monto = float.Parse(Console.ReadLine() ?? "0.0f");
                     float recibe = calculadora.Recibir(porcentajeComision, comisionFija, monto);
                     Console.WriteLine($"Si desea recibir {monto} debe enviar: {recibe}");
                 }
@@ -42,22 +43,5 @@ namespace Calculadore
             }
         }
 
-        public float Enviar(float porcentajeComision, float comisionFija, float monto)
-        {
-            float crrValue = monto;
-            float paypalCommissionPorcentaje = porcentajeComision / 100;
-            float crrCommision = crrValue * paypalCommissionPorcentaje + comisionFija;
-            float result = MathF.Round(monto - crrCommision, 2);
-            return result;
-        }
-        public float Recibir(float porcentajeComision, float comisionFija, float monto)
-        {
-            float crrValue = monto;
-            float paypalCommissionPorcentaje = porcentajeComision / 100;
-
-            float crrCommision = (crrValue + comisionFija) / (1 - paypalCommissionPorcentaje);
-            float result = MathF.Round(crrCommision, 2);
-            return result;
-        }
     }
 }
